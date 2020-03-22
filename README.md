@@ -12,3 +12,5 @@ https://israel0688.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Israel Berlanga
+
+###©️2019 Run Buddy, Inc
