@@ -391,15 +391,86 @@ footer a
       flex: 1;
   }
 
-  .trainer img
+  .trainer-img
   {
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
   }
+
+  .trainer-img::after
+  {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: .6s;
+  }
+
+  .trainer:hover .trainer-img::after
+    {
+    background: linear-gradient(rgba(252,255,56,0.3), var(--secondary-color));
+    opacity: 1;
+    transition: .5s;
+    }
+
+    .trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4
+    {
+        top: 0px;
+        opacity:1;
+    }
+
+    .trainer-img h3
+    {
+        position: relative;
+        z-index: 8888;
+    }
+
+    .trainer-img h4
+    {
+        position: relative;
+        z-index:8888;
+    }
 
   .trainer-bio
   {
       padding: 25px;
       line-height: 1.3;
+  }
+
+  .trainer-bio h3 
+  {
+    font-size: 28px;
+  }
+  
+  .trainer-bio h4 
+  {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;  
+}
+
+  .trainer h3
+  {
+      font-size: 28px;
+      margin-bottom: 5px;
+      position: relative;
+      top: 200px;
+  }
+
+  .trainer h4
+  {
+      font-size: 23px;
+      margin-bottom: 5px;
+      position: relative;
+      top: 200px;
   }
 
   .text-left
@@ -427,6 +498,21 @@ footer a
   .trainer-bio p
   {
       font-size: 17px;
+  }
+
+  .trainer-1
+  {
+      background-image: url("../images/trainer-1.jpg")
+  }
+
+  .trainer-2
+  {
+      background-image: url("../images/trainer-2.jpg")
+  }
+
+  .trainer-3
+  {
+      background-image: url("../images/trainer-3.jpg")
   }
 
   /* REACH OUT STYLES START */
